@@ -2,37 +2,103 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu-span {
+  font-size: 15.2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.main-header {
+  height: 125px;
+  width: 100%;
   color: white;
+  display: flex;
+  position: fixed;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.main-header img {
+  height: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.welcome {
+  height: 745px;
+  background-image: url('https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg');
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wTextA {
+  font-size: 40px;
+  margin: 5px;
+}
+
+.wTextB {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.goldButo {
+  background-color: #fed136;
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  border-radius: 5px;
+  height: 75px;
+  width: 250px;
+  padding-top: 20px;
+  padding-left: 0px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.services {
+  height: 745px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.secHeader {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.secFlavor {
+  font-size: 15px;
+  font-style: italic;
+  color: gray;
+  margin: 5px;
+}
+
+
+
+.menu-span:hover {
+  color: gold;
+}
+
+.goldButo:hover {
+  background-color: gold;
 }

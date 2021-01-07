@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import Header from './components/header';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      dropdownView: false
+    }
+  }
+
+  toggleDropdown = () => {
+    this.setState({dropdownView: !this.state.dropdownView})
+  }
+
+  render(){
+    return (
+      <div className="App">
+        <Header/>
+        <section className='welcome'>
+          <span className='wTextA'>Welcome To Our Studio!</span>
+          <span className='wTextB'>IT'S NICE TO MEET YOU</span>
+          <div className='goldButo'>TELL ME MORE</div>
+        </section>
+        <section className='services'>
+              <span className='secHeader'>SERVICES</span>
+              <span className='secFlavor'>Lorem ipsum dolor sit amet consectetur.</span>
+              <section className='nuggets'>
+              </section>
+        </section>
+      </div>
+    )
+  }
 }
 
 export default App;
